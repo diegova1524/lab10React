@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 mx-auto mb-4"> <!-- Añadida la clase mb-4 para el borde inferior -->
+        <div class="card mt-4">
+          <div class="card-body text-center"> <!-- Añadida la clase text-center para centrar el contenido -->
+            <img class="card-img-top" src="http://placehold.it/700x400" alt="">
+            <p></p>
+            <h4 class="card-title">{{ producto.nombre }}</h4>
+            <h5>Precio: {{ producto.precio }}</h5>
+            <p>Categoría: {{ producto.categoria.nombre }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
